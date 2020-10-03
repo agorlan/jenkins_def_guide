@@ -38,6 +38,6 @@ def main(name, param_x):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--PARAMETER_X', '-px')
+    parser.add_argument('--param_x', '-px')
     args = parser.parse_args()
-    main(FILE_NAME, args.px)
+    main(FILE_NAME, args.param_x)
