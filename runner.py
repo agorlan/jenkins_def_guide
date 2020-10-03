@@ -26,7 +26,7 @@ FILE_NAME = 'index.html'
 
 
 def main(name):
-    with open(name, 'w') as f:
+    with open(name + '_wrong_postfix', 'w') as f:
         f.write(HTML_CONTENT)
 
 
