@@ -1,1 +1,2 @@
 # Requirements
+pytest==6.1.0
