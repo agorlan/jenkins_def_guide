@@ -30,8 +30,8 @@ VERSION = '0.0.1'
 FILE_NAME = 'index.html'
 
 
-def main(name, args):
-    print('\nMain flow started! Version: {}. Parameter X: {}'.format(VERSION, args))
+def main(name, param_x):
+    print('\nMain flow started! Version: {}. Parameter X: {}'.format(VERSION, param_x))
     with open(name, 'w') as f:
         f.write(HTML_CONTENT)
 
@@ -40,4 +40,4 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--PARAMETER_X', '-px')
     args = parser.parse_args()
-    main(FILE_NAME, args)
+    main(FILE_NAME, args.px)
