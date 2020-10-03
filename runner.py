@@ -1,4 +1,7 @@
 """Module doc"""
+import argparse
+
+
 print('Hello Jenkins world!')
 
 HTML_CONTENT = """
@@ -27,11 +30,14 @@ VERSION = '0.0.1'
 FILE_NAME = 'index.html'
 
 
-def main(name):
+def main(name, args):
+    print('\nMain flow started! Version: {}. Parameter X: {}'.format(VERSION, args))
     with open(name, 'w') as f:
         f.write(HTML_CONTENT)
 
 
 if __name__ == '__main__':
-    print('Runner started! Version: {}'.format(VERSION))
-    main(FILE_NAME)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--PARAMETER_X', '-px')
+    args = parser.parse_args()
+    main(FILE_NAME, args)

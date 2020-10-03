@@ -16,7 +16,7 @@ def test_main():
     name = 'test_index.html'
     if os.path.exists(name):
         os.remove(name)
-    main(name)
+    main(name, 'test_x')
     assert os.path.exists(name)
     os.remove(name)
 
