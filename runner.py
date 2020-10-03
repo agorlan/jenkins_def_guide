@@ -23,6 +23,7 @@ support@yourcompany.com</a>.
 </HTML>
 """
 
+VERSION = '0.0.1'
 FILE_NAME = 'index.html'
 
 
@@ -32,5 +33,5 @@ def main(name):
 
 
 if __name__ == '__main__':
-    print('Runner started!')
+    print('Runner started! Version: {}'.format(VERSION))
     main(FILE_NAME)
