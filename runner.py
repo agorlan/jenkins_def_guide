@@ -1,3 +1,4 @@
+"""Module doc"""
 print('Hello Jenkins world!')
 
 HTML_CONTENT = """
@@ -31,4 +32,5 @@ def main(name):
 
 
 if __name__ == '__main__':
+    print('Runner started!')
     main(FILE_NAME)
